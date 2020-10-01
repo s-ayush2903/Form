@@ -39,12 +39,13 @@ div {
 <h3>Using CSS to style an HTML Form</h3>
 
 <div>
-  <form method="post" action="connect.php">
+  <form method="post" action="connect.php" onsubmit="alert('Form is being submitted')">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="fname" placeholder="Your name..">
 
     <label for="lname">Last Name</label>
     <input type="text" id="lname" name="lname" placeholder="Your last name..">
+     <button onclick="console.log(useless button was clicked')"> regular button</button>
 
     <!-- <label for="country">Country</label>
     <select id="country" name="country">
@@ -59,6 +60,28 @@ div {
     <input id="submit" type="submit" value="Submit">
   </form>
 </div>
+  <h1>Intermediate forms</h1>
+    <form>
+        <textarea></textarea>
+        <select>
+            <option>cheddar cheese</option>
+            <option>mozerella</option>
+        </select>
+    </form>
+    <p>select your favourite cheese</p>
+    <form>
+        <input id="cheddar" type="radio"/>
+        <label for="cheddar">cheddar</label>
+        <br/>
+        <input id="moz" type="radio"/>
+        <label for="moz">mozerrella</label>
+      <br/>
+        <input type="submit" value="submit" aria-describedby=""/>
+    </form>
+    
+    <div id="cheese-submit" style="visibility:hidden"><h2>descriptiom for submit button</h2>
+        <p>u will get your cheesse</p>
+    </div>  
 
   <p>
     <br><br><br><br><br>
